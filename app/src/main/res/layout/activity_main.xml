@@ -1,34 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <TextView
+        android:id="@+id/tvAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:text="LendLoop"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textColor="#70477D"/>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="55dp"
+        android:layout_height="3dp"
+        android:background="#BFEFE3"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrow. Lend. Donate."
+        android:textSize="16sp"
+        android:textColor="#C094D3"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sharing makes life easier."
+        android:textSize="13sp"
+        android:textColor="#888888"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivSplashImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/a"
+        android:contentDescription="LendLoop shared items illustration"/>
+
+</LinearLayout>
