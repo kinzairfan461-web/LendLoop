@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="soft_lavender">#C094D3</color>
+    <color name="deep_purple">#70477D</color>
+    <color name="mint_green">#BFEFE3</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="primary">@color/deep_purple</color>
+    <color name="accent">@color/soft_lavender</color>
+    <color name="background">@color/white</color>
+    <color name="surface">@color/white</color>
+
+    <color name="text_primary">#302536</color>
+    <color name="text_secondary">#888888</color>
+    <color name="success">#347A61</color>
+    <color name="border">#E8DDED</color>
 </resources>
