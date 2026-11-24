@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:background="@color/surface"
+        android:elevation="3dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse Items"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/deep_purple"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Items to Borrow"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore items shared by students."
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="18dp"/>
+            <EditText
+                android:id="@+id/searchItems"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Search items or categories..."
+                android:padding="14dp"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:background="@drawable/item_card_bg"
+                android:inputType="text"/>
+
+            <!-- SECTION TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Items"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_purple"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="14dp"/>
+
+            <!-- ITEMS WILL APPEAR HERE -->
+            <LinearLayout
+                android:id="@+id/itemsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
