@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center_vertical"
+            android:text="Add New Item"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/deep_purple"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share an Item"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the details of the item you want to lend."
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter item name"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:inputType="textCapSentences"
+            android:background="@drawable/item_card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/etCategory"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="e.g. Books, Electronics"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:inputType="textCapSentences"
+            android:background="@drawable/item_card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:hint="Describe your item..."
+            android:padding="14dp"
+            android:gravity="top"
+            android:inputType="textMultiLine|textCapSentences"
+            android:background="@drawable/item_card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"/>
+
+        <!-- Owner Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/etOwner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter your name"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:background="@drawable/item_card_bg"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnSaveItem"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Add Item"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/deep_purple"/>
+
+    </LinearLayout>
+
+</ScrollView>
